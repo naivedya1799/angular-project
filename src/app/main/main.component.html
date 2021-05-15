@@ -1,0 +1,225 @@
+<section class="bg-section" style="height: 150%;">
+  <!-- Navbar -->
+  <div class=" d-flex  align-content-center px-5 navbar">
+    <div class="col-6 px-md-5 align-items-md-center justify-content-md-start  d-flex">
+      <img class="img-responsive mx-md-5" src="assets/img/logo.png">
+    </div>
+    <div class="col-6 d-flex flex-row py-md-5" 
+      style="
+      background-color: transparent;">
+      <div class="col-2 d-flex justify-content-center align-items-md-center">
+        <span class="navfont">Products</span>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-md-center">
+        <span class="navfont">Solutions</span>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-md-center">
+        <span class="navfont">Pricing</span>
+      </div>
+      <div class="col-2 d-flex justify-content-center align-items-md-center ">
+        <button class="px-md-5 loginbtn" style="border:#663399 1px solid;">Login</button>
+      </div>
+      <div class="col-3 d-flex justify-content-center align-items-md-center ">
+        <div class="col-8 navgetstart d-flex justify-content-center align-items-md-center">
+          <span class="navfontstart">Get Started</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- main  -->
+  <div class=" d-flex col-md-12 flex-row main">
+    <!-- left section -->
+    <div class="col-6 d-flex flex-wrep flex-column justify-content-md-center align-items-md-center"
+      style="background-image: url(assets/img/blob-small.png);background-repeat: no-repeat;background-position: -250px ;">
+      <div>
+        <div class="d-flex justify-content-md-center align-items-md-center">
+          <img class="img-responsive" src="assets/img/make.png">
+        </div>
+        <div class="d-flex justify-content-md-start align-items-md-center  mt-md-4">
+          <img class="img-responsive" src="assets/img/Line2.png">
+        </div>
+      </div>
+      <div class="d-flex flex-column justify-content-md-center align-items-md-center  mt-md-5">
+        <img class="img-responsive" src="assets/img/collect.png" width="500px" height="200px" style="z-index: 1">
+        <!-- <img class="img-responsive" src="assets/img/acc.png" width="300px" height="100px" > -->
+      </div>
+      <div class="d-flex justify-content-md-end align-items-md-end  mt-md-5" style="margin-left: 50%;">
+        <img class="img-responsive" src="assets/img/acc.png" width="300px" height="100px">
+      </div>
+    </div>
+  
+    <!-- right section -->
+    <div class="col-md-6 d-flex flex-column justify-content-md-center align-items-md-center">
+      <div class="col-md-6 w-100 d-flex flex-row justify-content-md-center align-items-md-center">
+        <!-- eligibility section -->
+        <div class="col-md-7  p-0 d-flex flex-column"
+          style=" background-color: white; margin-top: 15%;border: white 1px solid; border-radius: 15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+          <div class="d-flex justify-content-md-center align-items-md-center w-100 py-2 bg-light"
+            style=" border-radius: 15px;border-bottom-left-radius: 0%;border-bottom-right-radius: 0%;">
+            <span class="MontserratM">Eligibility Calculator</span>
+          </div>
+          <div class="d-flex flex-column justify-content-md-start align-items-md-start px-5 py-md-4">
+            <span class="py-1 MontserratM">Monthly Income</span>
+            <span class="py-1 Montserrat" style="font-size: 20px;" >₹ {{value}}</span>
+            <mat-slider color="primary" class="p-0"  tickInterval="1000" step="1000" [min]="min" [max]="max" [(ngModel)]="value"
+              aria-label="units" >
+            </mat-slider>
+            <div class="d-flex flex-row col-12 ">
+              <div class="col-md-6  justify-content-md-start align-items-md-start p-0">
+                <span class="MontserratR" style="font-size: 10px;">₹ 1,00,000</span>
+              </div>
+              <div class="col-md-6  d-flex justify-content-lg-end p-0">
+                <span class="MontserratR" style="font-size: 10px;">₹ 3,00,000</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-md-start flex-column align-items-md-start px-5 py-md-4">
+            <span class="py-1 MontserratM">Monthly Expenses</span>
+            <mat-slider color="primary"  tickInterval="1000" step="1000" min="100000" max="300000" aria-label="units">
+            </mat-slider>
+          </div>
+          <div class="d-flex flex-column justify-content-md-start align-items-md-start px-5  py-2">
+            <span class="py-1 MontserratM">Repayment Teure</span>
+            <mat-form-field class="w-100" >
+              <mat-label class="Montserrat" style="color: black;">6 Months</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let food of foods" [value]="food.value" class="Montserrat" style="color: black;">
+                  {{food.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="d-flex justify-content-md-start align-items-md-center px-5 py-md-4">
+            <div class="d-flex flex-row col-12 ">
+              <div class="col-md-8 justify-content-md-start align-items-md-start p-0">
+                <span class="py-1 MontserratM">Do you have any existing loans?</span>
+              </div>
+              <div class="col-md-4 d-flex justify-content-lg-end p-0">
+                <mat-slide-toggle checked color="primary"></mat-slide-toggle>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column justify-content-md-start align-items-md-start px-5  py-md-4">
+            <span class="py-1 MontserratM">Repayment Teure</span>
+            <mat-form-field style="width: 100%;">
+              <input matInput placeholder="₹ 15,000">
+            </mat-form-field>
+          </div>
+        </div>
+        <!-- loan amount section -->
+        <div class="col-3  getmoney d-flex flex-column justify-content-md-center align-items-md-center m-2  bg-info py-5"
+          style="
+        border-radius: 15px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;
+        ;">
+          <span class="MontserratM" style="color: #999999;">Loan Amount</span>
+          <span class="Montserrat" style="font-size: 20px;color: white;">₹ 1,00,000</span>
+          <span class="MontserratM mt-md-5" style="color: #999999;">Your Emi will be</span>
+          <span class="Montserrat" style="font-size: 20px;color: white;">₹ 15,000</span>
+          <div class="d-flex justify-content-md-center align-items-md-center w-100 p-md-4">
+            <button class="px-md-4 getmoneybtn">GET MONEY</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex w-100 p-0 flex-row justify-content-md-end align-items-md-end">
+        <img class="img-responsive" src="assets/img/acc.png" width="300px" height="100px" >
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  
+  <!--bottom section  -->
+  <div class=" d-flex col-md-12" style="background-image: url(assets/img/sol.png);margin-top: 7%;">
+    <!-- first column -->
+    <div class="d-flex flex-column p-0 justify-content-md-center align-items-md-end col-md-4 ">
+      <div class="d-flex col-md-3"></div>
+      <div class="d-flex flex-column p-0 justify-content-lg-end align-items-md-end col-md-9">
+        <div class="d-flex flex-column flex-column mt-md-5 px-2 box py-md-4">
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <img class="img-responsive" src="assets/img/Getpaid.png">
+          </div>
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <span style="font-weight: bold;" >Quick cash disbursement</span>
+          </div>
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <span class="text-hover" style="color: #999999;">Get terms loans that your business needs within 72 hrs</span>
+          </div>
+        </div>
+        <div class="d-flex  mt-md-5 px-2 flex-column flex-column box py-md-4">
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <img class="img-responsive" src="assets/img/Low.png">
+          </div>
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <span style="font-weight: bold;">Low-interest rate</span>
+          </div>
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <span class="text-hover" style="color: #999999;">Achieve your financial goals with an amazing interest rate starting at 13% per
+              annum</span>
+          </div>
+        </div>
+        <div class="d-flex  mt-md-5 mb-md-3 px-2 flex-column flex-column box py-md-4">
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <img class="img-responsive" src="assets/img/Secure.png">
+          </div>
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <span style="font-weight: bold;">Zero Paperwork</span>
+          </div>
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <span class="text-hover" style="color: #999999;">Get started instantly by submitting only your basic details & bank statements</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- second colum -->
+    <div class="d-flex col-md-4">
+      <div class="d-flex col-md-1"></div>
+      <div class="d-flex flex-column p-0 justify-content-lg-center align-items-md-center col-md-9">
+        <div class="d-flex flex-column flex-column mt-md-5 px-md-2 box py-md-4">
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <img class="img-responsive" src="assets/img/freelancer.png">
+          </div>
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <span  style="font-weight: bold;">Ace your business finances</span>
+          </div>
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <span class="text-hover" style="color: #999999;">Manage banking, accounting & everything in between, on one platform</span>
+          </div>
+        </div>
+        <div class="d-flex  mt-md-5 px-md-2 flex-column flex-column box py-md-4 ">
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4 Loanbox">
+            <img class="img-responsive" src="assets/img/Covid.png">
+          </div>
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <span style="font-weight: bold;">Loans to fight COVID-19</span>
+          </div>
+          <div class="d-flex my-2 justify-content-md-start align-items-md-center px-md-4">
+            <span class="text-hover" style="color: #999999;">Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- third column -->
+    <div class="d-flex flex-column justify-content-md-center align-items-md-center col-md-">
+      <div class="d-flex justify-content-md-start align-items-md-center">
+        <img class="img-responsive" src="assets/img/Boost.png">
+      </div>
+      <div class="d-flex justify-content-md-start align-items-md-start w-100 pt-md-5">
+        <img class="img-responsive" src="assets/img/Line.png">
+      </div>
+      <div class="d-flex justify-content-md-start align-items-md-center pt-md-4">
+        <img class="img-responsive" src="assets/img/Get.png">
+      </div>
+      <div class="d-flex justify-content-md-start align-items-md-start w-100 pt-md-5">
+        <button
+          style="border-radius: 15px;border:#663399 1px solid;color: #663399;padding: 10px;background-color: transparent;">Get
+          an Open
+          Account</button>
+      </div>
+    </div>
+  </div>
+</section>

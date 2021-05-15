@@ -1,0 +1,195 @@
+.navbar {
+    // z-index: 100000;
+    // background: white;
+    // background-color: transparent;
+    // position: fixed;
+    // width: 100%;
+    // // padding-top: 30%;
+}
+//   .main{
+//     //   margin-top: 10%;
+//   }
+.bg-section {
+    background-image: url(../../assets/img/circle.png);
+    background-repeat: no-repeat !important;
+    background-position: top !important;
+    background-position-x: 525px !important;
+    background-size: contain !important;
+    background-position-y: -203px !important;
+    /* z-index: 1000000; */
+    width: revert;
+}
+.navfont {
+    font-size: 1.5rem;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+}
+.navfont:hover {
+    font-size: 1.5rem;
+    color: #663399;
+    font-family: "Open Sans", sans-serif;
+}
+.navfontlogin {
+    font-size: 1.5rem;
+    color: #663399;
+    padding: 0.5rem;
+    // font-family: Mo;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+.loginbtn {
+    background-color: transparent;
+    color: #663399;
+    font-family: "Montserrat",'Open Sans';
+    font-size: 15px;
+    border: #663399 0.5px solid;
+    border-radius: 15px;
+    padding: 2px;
+}
+.loginbtn:hover {
+    background-color: #663399 !important;
+    color: white;
+    font-family: "Montserrat",'Open Sans';
+    font-size: 15px;
+    border: #663399 0.5px solid;
+    border-radius: 15px;
+    padding: 2px;
+}
+.navfontlogin:hover {
+    font-size: 1.5rem;
+    color: white !important;
+    padding: 0.5rem;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+.navfontstart {
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+    font-family: "Montserrat",'Open Sans';
+    font-size: 15px;
+}
+.navfontstart:hover {
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+    font-family: "Montserrat",'Open Sans';
+    font-size: 15px;
+}
+
+.navlogin {
+    background-color: white;
+    border-radius: 15px;
+    border: #663399 1px solid;
+}
+.navlogin:hover {
+    background-color: #663399;
+    border-radius: 15px;
+    // color: white !important;
+    border: #663399 1px solid;
+}
+.navgetstart {
+    background-color: #9f62c9;
+    border-radius: 15px;
+    border: white 1px solid; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #9f62c9, #663399);
+}
+.navgetstart:hover {
+    background-color: #663399;
+    border-radius: 15px;
+    // border: white 1px solid; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #663399, #663399);
+}
+.maintext {
+    color: black;
+    font-size: 2rem;
+}
+.mat-slider {
+    width: 100%;
+}
+.rightmargin {
+    margin-top: 25%;
+}
+.box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    background-color: white;
+    font-family: "Montserrat",'Open Sans';
+    // font-weight: bold;
+    font-size: 13px;
+    width: 100%;
+}
+.box:hover {
+    background-image: url(../../assets/img/Rectangle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white !important;
+    font-family: "Montserrat";
+    // font-weight: bold;
+    font-size: 15px;
+
+    .text-hover {
+        color: #ffffff !important;
+    }
+}
+
+.text-hover:hover {
+    color: #ffffff !important;
+}
+.leftsectionbg {
+    background-image: url(../../assets/img/Rectangle.png);
+}
+
+.bg-section {
+    background-image: url(../../assets/img/circle.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.getmoney {
+    background-color: #9f62c9; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#9f62c9, #663399);
+}
+.MontserratM {
+    font-family: "Montserrat", "Open Sans";
+    font-weight: 500;
+}
+.MontserratR {
+    font-family: "Montserrat",'Open Sans';
+    font-weight: 100;
+    font-size: 15px;
+    color: #999999;
+}
+
+.Montserrat {
+    font-family: "Montserrat", "Open Sans";
+    font-weight: bold;
+    font-size: 15px;
+}
+.getmoneybtn {
+    border-radius: 15px;
+    border: white 1px solid;
+    color: #9f62c9;
+    background-color: white;
+    font-family: "Montserrat",'Open Sans';
+    font-size: 12px;
+}
+.getmoneybtn:hover {
+    border-radius: 15px;
+    border: #663399 1px solid;
+    color: white;
+    font-size: 12px;
+    background-color: #663399;
+    font-family: "Montserrat",'Open Sans';
+    // font-size: 15px;
+}
+.Loanbox{
+    background-image: url(../../assets/img/Path.png);
+    background-repeat: no-repeat !important;
+    background-position: top !important;
+    background-position-x: 13px !important;
+    // background-size:contain;
+    background-position-y:  12px !important;
+    z-index: 100000;
+    /* z-index: 1000000; */
+    
+}
