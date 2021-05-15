@@ -14,6 +14,9 @@ export class MainComponent implements OnInit {
   value: any
   min: number = 100000
   max: number = 300000
+  value1:any
+  min1: number = 0
+  max1: number = 100000
   amt: Amt[] = [
     { value: '5 Months-0', viewValue: '5 Months' },
     { value: '4 Months-1', viewValue: '4 Months' },
@@ -22,6 +25,7 @@ export class MainComponent implements OnInit {
 
   constructor() { 
     this.value = this.min
+    this.value1=this.min1
   }
 
   ngOnInit() {
