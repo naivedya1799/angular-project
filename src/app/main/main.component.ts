@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-interface Food {
+interface Amt {
   value: string;
   viewValue: string;
 }
@@ -14,7 +14,7 @@ export class MainComponent implements OnInit {
   value: any
   min: number = 100000
   max: number = 300000
-  foods: Food[] = [
+  amt: Amt[] = [
     { value: '5 Months-0', viewValue: '5 Months' },
     { value: '4 Months-1', viewValue: '4 Months' },
     { value: '3 Months-2', viewValue: '3 Months' }

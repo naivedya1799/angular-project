@@ -54,13 +54,13 @@
     <div class="col-md-6 d-flex flex-column justify-content-md-center align-items-md-center">
       <div class="col-md-6 w-100 d-flex flex-row justify-content-md-center align-items-md-center">
         <!-- eligibility section -->
-        <div class="col-md-7  p-0 d-flex flex-column"
+        <div class="col-md-7  p-0 d-flex flex-column "
           style=" background-color: white; margin-top: 15%;border: white 1px solid; border-radius: 15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
           <div class="d-flex justify-content-md-center align-items-md-center w-100 py-2 bg-light"
             style=" border-radius: 15px;border-bottom-left-radius: 0%;border-bottom-right-radius: 0%;">
             <span class="MontserratM">Eligibility Calculator</span>
           </div>
-          <div class="d-flex flex-column justify-content-md-start align-items-md-start px-5 py-md-4">
+          <div class="d-flex flex-column justify-content-md-start align-items-md-start px-4 py-md-4">
             <span class="py-1 MontserratM">Monthly Income</span>
             <span class="py-1 Montserrat" style="font-size: 20px;" >₹ {{value}}</span>
             <mat-slider color="primary" class="p-0"  tickInterval="1000" step="1000" [min]="min" [max]="max" [(ngModel)]="value"
@@ -75,23 +75,23 @@
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-md-start flex-column align-items-md-start px-5 py-md-4">
+          <div class="d-flex justify-content-md-start flex-column align-items-md-start px-4 py-md-4">
             <span class="py-1 MontserratM">Monthly Expenses</span>
             <mat-slider color="primary"  tickInterval="1000" step="1000" min="100000" max="300000" aria-label="units">
             </mat-slider>
           </div>
-          <div class="d-flex flex-column justify-content-md-start align-items-md-start px-5  py-2">
+          <div class="d-flex flex-column justify-content-md-start align-items-md-start px-4  py-2">
             <span class="py-1 MontserratM">Repayment Teure</span>
             <mat-form-field class="w-100" >
               <mat-label class="Montserrat" style="color: black;">6 Months</mat-label>
               <mat-select>
-                <mat-option *ngFor="let food of foods" [value]="food.value" class="Montserrat" style="color: black;">
-                  {{food.viewValue}}
+                <mat-option *ngFor="let Amt of amt" [value]="Amt.value" class="Montserrat" style="color: black;">
+                  {{Amt.viewValue}}
                 </mat-option>
               </mat-select>
             </mat-form-field>
           </div>
-          <div class="d-flex justify-content-md-start align-items-md-center px-5 py-md-4">
+          <div class="d-flex justify-content-md-start align-items-md-center px-4 py-md-4">
             <div class="d-flex flex-row col-12 ">
               <div class="col-md-8 justify-content-md-start align-items-md-start p-0">
                 <span class="py-1 MontserratM">Do you have any existing loans?</span>
@@ -101,7 +101,7 @@
               </div>
             </div>
           </div>
-          <div class="d-flex flex-column justify-content-md-start align-items-md-start px-5  py-md-4">
+          <div class="d-flex flex-column justify-content-md-start align-items-md-start px-4  py-md-4">
             <span class="py-1 MontserratM">Repayment Teure</span>
             <mat-form-field style="width: 100%;">
               <input matInput placeholder="₹ 15,000">
