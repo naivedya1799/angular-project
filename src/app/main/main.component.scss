@@ -40,7 +40,7 @@
 .loginbtn {
     background-color: transparent;
     color: #663399;
-    font-family: "Montserrat",'Open Sans';
+    font-family: "Montserrat", "Open Sans";
     font-size: 15px;
     border: #663399 0.5px solid;
     border-radius: 15px;
@@ -49,7 +49,7 @@
 .loginbtn:hover {
     background-color: #663399 !important;
     color: white;
-    font-family: "Montserrat",'Open Sans';
+    font-family: "Montserrat", "Open Sans";
     font-size: 15px;
     border: #663399 0.5px solid;
     border-radius: 15px;
@@ -66,14 +66,14 @@
     font-size: 1.5rem;
     color: white;
     padding: 0.5rem;
-    font-family: "Montserrat",'Open Sans';
+    font-family: "Montserrat", "Open Sans";
     font-size: 15px;
 }
 .navfontstart:hover {
     font-size: 1.5rem;
     color: white;
     padding: 0.5rem;
-    font-family: "Montserrat",'Open Sans';
+    font-family: "Montserrat", "Open Sans";
     font-size: 15px;
 }
 
@@ -114,7 +114,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 15px;
     background-color: white;
-    font-family: "Montserrat",'Open Sans';
+    font-family: "Montserrat", "Open Sans";
     // font-weight: bold;
     font-size: 13px;
     width: 100%;
@@ -124,7 +124,7 @@
     background-position: center;
     background-repeat: no-repeat;
     color: white !important;
-    font-family: "Montserrat",'Open Sans';
+    font-family: "Montserrat", "Open Sans";
     // font-weight: bold;
     font-size: 13px;
 
@@ -154,7 +154,7 @@
     font-weight: 500;
 }
 .MontserratR {
-    font-family: "Montserrat",'Open Sans';
+    font-family: "Montserrat", "Open Sans";
     font-weight: 100;
     font-size: 15px;
     color: #999999;
@@ -170,7 +170,7 @@
     border: white 1px solid;
     color: #9f62c9;
     background-color: white;
-    font-family: "Montserrat",'Open Sans';
+    font-family: "Montserrat", "Open Sans";
     font-size: 12px;
 }
 .getmoneybtn:hover {
@@ -179,17 +179,30 @@
     color: white;
     font-size: 12px;
     background-color: #663399;
-    font-family: "Montserrat",'Open Sans';
+    font-family: "Montserrat", "Open Sans";
     // font-size: 15px;
 }
-.Loanbox{
+.Loanbox {
     background-image: url(../../assets/img/Path.png);
     background-repeat: no-repeat !important;
     background-position: top !important;
     background-position-x: 13px !important;
     // background-size:contain;
-    background-position-y:  12px !important;
+    background-position-y: 12px !important;
     z-index: 100000;
     /* z-index: 1000000; */
-    
+}
+.account {
+    border-radius: 15px;
+    border: #663399 1px solid;
+    color: #663399;
+    padding: 10px;
+    background-color: transparent;
+}
+.account:hover {
+    border-radius: 15px;
+    border: #663399 1px solid;
+    color: white;
+    padding: 10px;
+    background-color: #663399;
 }
